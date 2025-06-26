@@ -60,9 +60,9 @@ chain = "dev"
 name = "collator01"
 command = "./target/release/generic-template-node"
 rpc_port = 8002
-args = ["--rpc-max-connections 10000 --state-pruning=archive --blocks-pruning=archive"]
+args = ["-lxcm=trace,pallet-assets=trace"]
 
 [[parachains.collators]]
 name = "collator02"
 command = "./target/release/generic-template-node"
-args = ["--rpc-max-connections 10000"]
+args = ["-lxcm=trace,pallet-assets=trace"]
